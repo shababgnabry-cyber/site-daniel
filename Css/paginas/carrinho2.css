@@ -1,0 +1,44 @@
+/* Regras específicas extraídas do HTML original.
+   Revise e simplifique conforme editar esta página. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.profile-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+h2 {
+  color: #333;
+  margin-bottom: 25px;
+}
+/* Estilo para cada item do perfil */
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.profile-item label {
+  font-weight: bold;
+  color: #555;
+}
+.profile-item span {
+  color: #000;
+  /* Garante que informações sensíveis como CPF/Senha não sejam exibidas como texto puro em um perfil real */
+}
+.profile-item.password-placeholder span {
+  color: #aaa;
+  font-style: italic;
+}

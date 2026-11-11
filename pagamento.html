@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<title>Loja Daniel</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href="Css/global.css" rel="stylesheet"/><link href="Css/carrinho.css" rel="stylesheet"/><link href="Css/paginas/pagamento.css" rel="stylesheet"/></head>
+
+<body>
+<header>
+<div class="logo"><strong>Loja Daniel</strong></div>
+<nav>
+<a href="interfaceinicial.html">Home</a>
+<a href="masculino.html">Masculino</a>
+<a href="feminino.html">Feminino</a>
+<a href="lancamentos.html">Lançamentos</a>
+<a href="carrinho.html">Carrinho</a>
+<a href="contato.html">Contato</a>
+<a href="perfil.html">Perfil</a>
+</nav>
+</header>
+<br/>
+<div class="corpo">
+<div class="container">
+<h2>Pagamento</h2>
+<form>
+<label>Nome do cliente:</label>
+<input required="" type="text"/>
+<label>Valor da compra (R$):</label>
+<input required="" step="0.01" type="number"/>
+<label>Método de pagamento:</label>
+<div class="metodos">
+<input name="metodo" onclick="mostrarCampos()" type="radio" value="cartao"/> Cartão de Crédito
+            <br/>
+<input name="metodo" onclick="mostrarCampos()" type="radio" value="pix"/> PIX
+            <br/>
+<input name="metodo" onclick="mostrarCampos()" type="radio" value="boleto"/> Boleto Bancário
+        </div>
+<!-- CAMPOS DE CARTÃO -->
+<div class="cartao">
+<label>Número do Cartão:</label>
+<input maxlength="19" type="text"/>
+<label>Validade:</label>
+<input type="month"/>
+<label>CVV:</label>
+<input maxlength="4" type="password"/>
+</div>
+<!-- CAMPOS DE PIX -->
+<div class="pix">
+<p>Escaneie o QR Code ou use a chave abaixo:</p>
+<input readonly="" type="text" value="email@empresa.com.br"/>
+</div>
+<!-- CAMPOS DE BOLETO -->
+<div class="boleto">
+<p>Ao continuar, um boleto será gerado para pagamento.</p>
+</div>
+<button type="submit">Confirmar Pagamento</button>
+</form>
+</div>
+</div>
+<br/>
+<footer>
+<p>2025 Loja Daniel. Todos os direitos reservados.</p>
+</footer>
+<script src="Js/pagamento.js"></script></body>
+</html>

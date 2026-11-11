@@ -1,0 +1,44 @@
+/* PERFIL: apresentação dos dados; integração ao banco será feita depois. */
+.profile-card {
+  max-width:760px;
+  width:calc(100% - 32px);
+  margin:55px auto 65px;
+  background:#fff;
+  border:1px solid #ccc;
+  padding:clamp(24px,4vw,48px);
+  text-align:left
+}
+.profile-card h2 {
+  font-size:clamp(2rem,4vw,3.2rem);
+  margin:0 0 28px;
+  color:#151515
+}
+.profile-item {
+  display:grid;
+  grid-template-columns:minmax(120px,1fr) 1.5fr;
+  gap:18px;
+  padding:18px 0;
+  border-bottom:1px solid #d5d5d2;
+  text-align:left
+}
+.profile-item label {
+  color:#555;
+  font-weight:700;
+  font-size:.83rem;
+  text-transform:uppercase;
+  letter-spacing:.04em
+}
+.profile-item span {
+  color:#171717;
+  font-weight:600;
+  overflow-wrap:anywhere
+}
+.profile-item.password-placeholder span {
+  color:#666
+}
+@media(max-width:550px) {
+  .profile-item {
+    grid-template-columns:1fr;
+    gap:4px
+  }
+}

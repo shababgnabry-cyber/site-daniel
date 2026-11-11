@@ -1,0 +1,19 @@
+css     header {
+      background-color: #111;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+ nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+	   footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }

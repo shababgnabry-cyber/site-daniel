@@ -1,0 +1,47 @@
+/* CARRINHO E PAGAMENTO */
+.profile-card,.corpo {
+  max-width:1050px;
+  margin:36px auto;
+  padding:24px
+}
+.profile-item {
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  padding:13px 0;
+  border-bottom:1px solid #ddd
+}
+.metodos {
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap
+}
+.total,.valor {
+  font-weight:700
+}
+@media(max-width:700px) {
+  .corpo,.profile-card {
+    margin:18px;
+    padding:14px
+  }
+  table {
+    display:block;
+    overflow-x:auto
+  }
+}
+/* Carrinho: separação e legibilidade */
+body:has(.cart-container) .cart-container,body:has(.carrinho-container) .carrinho-container {
+  background:#fff;
+  border:1px solid #ccc;
+  padding:clamp(16px,3vw,32px)
+}
+table th {
+  background:#222;
+  color:#fff
+}
+table td {
+  background:#fff
+}
+table tr:nth-child(even) td {
+  background:#f5f5f3
+}

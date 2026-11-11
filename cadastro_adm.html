@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+
+<meta charset="utf-8"/>
+<title>Cadastro</title>
+
+<link href="Css/global.css" rel="stylesheet"/><link href="Css/formularios.css" rel="stylesheet"/><link href="Css/paginas/login_adm.css" rel="stylesheet"/></head>
+<body>
+<div class="form-container">
+<h2>Cadastro Funcionário</h2>
+<form action="cadastrar_usuario.php" method="post">
+<label for="nome">Nome Completo:</label>
+<input id="nome_completo" name="nome_completo" required type="text"/>
+
+<label for="nome">CPF:</label>
+<input id="cpf" name="cpf" required="" type="text"/>
+
+
+<label for="senha">Telefone:</label>
+<input id="telefone" name="telefone" required="" type="text"/>
+
+<label for="email">Email:</label>
+<input id="email" name="email" required="" type="email"/>
+
+<label for="senha">Senha:</label>
+<input id="senha" name="senha" required="" type="password"/>
+
+<label for="senha">Setor:</label>
+<input id="setor" name="setor" required="" type="text"/>
+
+<label for="senha">Nivel de Permissão:</label>
+<input id="nivel_permissao" name="nivel_permissao" required="" type="text"/>
+
+<button type="submit"> Cadastrar </button>
+</form></div>
+</body>
+</html>
